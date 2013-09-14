@@ -5,6 +5,7 @@ require "sinatra/json"
 require "sinatra/reloader" if development?
 
 require 'json'
+
 dir = File.absolute_path(ARGV[0] || 'testfiles')
 files = Dir[dir + "/*"]
 puts "Starting serving files from: #{dir}"
